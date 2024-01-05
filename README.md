@@ -18,6 +18,6 @@ In this step, I am visualizing the app to look like this:
 
 # Step 3 - Creating the Web application
 
-This is currently in progress, while update when finished!
+This is currently in progress, will update when finished!
 
 
