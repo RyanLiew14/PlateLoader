@@ -27,6 +27,8 @@ We developed a little bit of the frontend! Here we are able to input a weight an
 <img width="1417" alt="image" src="https://github.com/RyanLiew14/PlateLoader/assets/45669549/81eccd72-fd78-4b0a-99f3-312050ba2918">
 <img width="1414" alt="image" src="https://github.com/RyanLiew14/PlateLoader/assets/45669549/2c80b2a7-6ab2-4d88-acd8-5a5820261c35">
 
+**At this point the MVP is done, users can now just input a weight and see what needs to be loaded on the bar, I want to add more functionality, but I am going to host this on vercel so users can interact with it, while I work on more changes**
+
 
 
 
