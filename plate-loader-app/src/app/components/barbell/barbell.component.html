@@ -1,0 +1,14 @@
+<div class = "mt-12 flex flex-row justify-center items-center">
+  <!-- <button type ='button'  class = "bg-blue-600 w-min p-1.5 rounded-md text-white text-sm"(click) = "test()">test</button> -->
+  <div class = "flex flex-row w-32 h-2 bg-gray-500">
+    <div class = "bg-gray-400 w-10"></div>
+    <div class = "bg-gray-500 w-2"></div>
+    <div class = "bg-gray-400 w-20"></div>
+  </div>
+  <div class = "h-4 bg-gray-500 w-1"></div>
+  <div class = "flex flex-row items-center">
+      <div *ngFor="let plate of weight" class = "{{plate.size}} {{plate.tailwindColor}} mr-0.5 w-2"></div>
+  </div>
+
+</div>
+
