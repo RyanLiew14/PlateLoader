@@ -23,5 +23,11 @@ This is currently in progress, will update when finished!
 We developed a little bit of the frontend! Here we are able to input a weight and it displays the plates that should be loaded on the bar, we have only implemented the kilogram side so far
 <img width="1413" alt="image" src="https://github.com/RyanLiew14/PlateLoader/assets/45669549/1c8b35e3-454b-4930-94c1-405477844e93">
 
+## 3.2 More adjustments and lbs side added 
+<img width="1417" alt="image" src="https://github.com/RyanLiew14/PlateLoader/assets/45669549/81eccd72-fd78-4b0a-99f3-312050ba2918">
+<img width="1414" alt="image" src="https://github.com/RyanLiew14/PlateLoader/assets/45669549/2c80b2a7-6ab2-4d88-acd8-5a5820261c35">
+
+
+
 
 
