@@ -29,6 +29,8 @@ We developed a little bit of the frontend! Here we are able to input a weight an
 
 **At this point the MVP is done, users can now just input a weight and see what needs to be loaded on the bar, I want to add more functionality, but I am going to host this on vercel so users can interact with it, while I work on more changes**
 
+# Deployed on https://plate-loader-app.vercel.app/
+
 
 
 
