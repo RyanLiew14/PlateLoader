@@ -19,5 +19,9 @@ In this step, I am visualizing the app to look like this:
 # Step 3 - Creating the Web application
 
 This is currently in progress, will update when finished!
+## 3.1 
+We developed a little bit of the frontend! Here we are able to input a weight and it displays the plates that should be loaded on the bar, we have only implemented the kilogram side so far
+<img width="1413" alt="image" src="https://github.com/RyanLiew14/PlateLoader/assets/45669549/1c8b35e3-454b-4930-94c1-405477844e93">
+
 
 
