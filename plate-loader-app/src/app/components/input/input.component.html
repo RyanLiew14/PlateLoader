@@ -1,9 +1,27 @@
 <div class = "flex flex-col justify-center items-center">
-<input #box (keyup.enter) = "inputWeight(box.value)" class = "text-center text-5xl p-2 focus:outline-none" placeholder = {{weight}} />
+<button *ngIf = "weightType == true"type ='button'  class = "bg-blue-600 w-fit p-1.5 rounded-md text-white text-sm"(click) = "box.value = ''"(click) = "toggleWeightType()">Switch to lbs</button>
+<button *ngIf = "weightType == false"type ='button'  class = "bg-blue-600 w-fit p-1.5 rounded-md text-white text-sm"(click) = "box.value = ''"(click) = "toggleWeightType()">Switch to kg</button>
+
+<input  #box (keyup.enter) = "inputWeight(box.value)" class = "text-center text-5xl p-2 focus:outline-none" placeholder = "Enter value" />
 <div class = "flex flex-row gap-2 items-center">
 <button type ='button'  class = "bg-blue-600 w-min p-1.5 rounded-md text-white text-sm"(click) = "inputWeight(box.value)">Submit</button>
 <p>or press <span class = 'text-blue-600'>Enter</span></p>
 </div>
+<p *ngIf = "invalidEntry == true" class = "mt-2 text-red-500 font-light"> Please enter a valid weight (increments of 1.25 for kg and 2.5 for lbs)</p>
+<h1 *ngIf = "weightToLoadKg.length > 0"class = "mt-8 text-4xl font-bold">{{weight}}</h1>
+<div *ngIf = "weightType == true" class = "mt-8 flex flex-row gap-2 items-center">
+  <div class = "flex flex-row items-center gap-2" *ngFor = "let plate of weightMapKg | keyvalue">
+    <div class = "rounded-full w-4 h-4 {{plate.key}}"></div>
+    <div>{{plate.value}}</div>
+  </div>
+</div>
+<div *ngIf = "weightType == false" class = "mt-8 flex flex-row gap-2 items-center">
+  <div class = "flex flex-row items-center gap-2" *ngFor = "let plate of weightMapLbs | keyvalue">
+    <div class = "bg-black w-2 {{plate.key}}"></div>
+    <div>{{plate.value}}</div>
+  </div>
+</div>
+
 
 </div>
 

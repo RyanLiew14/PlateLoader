@@ -13,6 +13,7 @@ import { WeightService } from '../../service/weight.service';
 export class barbellComponent implements OnInit {
   title = 'plate-loader-app';
   weight: kilogramWeight[] = [];
+  weightType: boolean = true;
 
   constructor(private weightService: WeightService) {}
 
@@ -20,9 +21,8 @@ export class barbellComponent implements OnInit {
     this.weightService.currentWeight$.subscribe((weight) => {
       this.weight = weight;
     });
-  }
-
-  test() {
-    console.log(this.weight);
+    this.weightService.currentWeightType$.subscribe((weightType) => {
+      this.weightType = weightType;
+    });
   }
 }
