@@ -32,7 +32,7 @@ const poundPlates = [
 
   if (response.metric === "kg") {
     const kgResponse = await prompts({
-      type: "number",
+      type: "text",
       name: "weight",
       message: "input weight in increments of 1.25",
       validate: (value) =>
@@ -55,7 +55,7 @@ const poundPlates = [
     console.log("Each side of the bar should contain: " + result.join(" "));
   } else {
     const lbsResponse = await prompts({
-      type: "number",
+      type: "text",
       name: "weight",
       message: "input weight in increments of 2.5",
       validate: (value) =>
