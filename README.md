@@ -2,6 +2,8 @@
 
 Introducing "Plate Loader", a web application designed for fitness enthusiasts and weightlifting experts. This tool takes the guesswork out of loading your barbell, providing precise recommendations based on user-inputted weight preferences. This is planned to be used in conjuction with another fitness app in creation
 
+This is also done in Angular, for self-based improvement and learning
+
 # Step 1 - Bare bones text based app 
 
 In this step, I wanted to make sure that I was able to get the math and calculations correct before creating the UI, we got a basic barebones text-version that seems to work!
