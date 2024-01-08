@@ -1,6 +1,10 @@
 <div class = "flex flex-col justify-center items-center">
-<button *ngIf = "weightType == true"type ='button'  class = "bg-blue-600 w-fit p-1.5 rounded-md text-white text-sm"(click) = "box.value = ''"(click) = "toggleWeightType()">Switch to lbs</button>
-<button *ngIf = "weightType == false"type ='button'  class = "bg-blue-600 w-fit p-1.5 rounded-md text-white text-sm"(click) = "box.value = ''"(click) = "toggleWeightType()">Switch to kg</button>
+<div class = "flex flex-row gap-4">
+  <button *ngIf = "weightType == true"type ='button'  class = "bg-blue-600 w-fit p-1.5 rounded-md text-white text-sm"(click) = "box.value = ''"(click) = "toggleWeightType()">Switch to lbs</button>
+  <button *ngIf = "weightType == false"type ='button'  class = "bg-blue-600 w-fit p-1.5 rounded-md text-white text-sm"(click) = "box.value = ''"(click) = "toggleWeightType()">Switch to kg</button>
+  <button  *ngIf = "includeCollars == true && weightType" type ='button'  class = "bg-blue-600 w-fit p-1.5 rounded-md text-white text-sm"(click) = "box.value = ''"(click) = "toggleCollars()">Do not include Collars</button>
+  <button  *ngIf = "includeCollars == false && weightType" type ='button'  class = "bg-blue-600 w-fit p-1.5 rounded-md text-white text-sm"(click) = "box.value = ''"(click) = "toggleCollars()">Include Collars</button>
+</div>
 
 <input  #box (keyup.enter) = "inputWeight(box.value)" class = "text-center text-5xl p-2 focus:outline-none" placeholder = "Enter value" />
 <div class = "flex flex-row gap-2 items-center">
