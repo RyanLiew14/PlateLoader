@@ -17,8 +17,7 @@
 </div>
 <div *ngIf = "weightType == false" class = "mt-8 flex flex-row gap-2 items-center">
   <div class = "flex flex-row items-center gap-2" *ngFor = "let plate of weightMapLbs | keyvalue">
-    <div class = "bg-black w-2 {{plate.key}}"></div>
-    <div>{{plate.value}}</div>
+    <div>({{plate.key}} lbs): {{plate.value}} </div>
   </div>
 </div>
 
