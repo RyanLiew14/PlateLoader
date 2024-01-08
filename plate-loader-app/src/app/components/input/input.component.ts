@@ -205,10 +205,10 @@ export class inputComponent implements OnInit {
       console.log(this.weightToLoadLbs);
 
       result.map((x) => {
-        if (map.has(x.size)) {
-          map.set(x.size, map.get(x.size) + 1);
+        if (map.has(x.weight)) {
+          map.set(x.weight, map.get(x.weight) + 1);
         } else {
-          map.set(x.size, 1);
+          map.set(x.weight, 1);
         }
       });
 
