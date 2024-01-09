@@ -8,6 +8,7 @@ export interface kilogramWeight {
   tailwindColor: string;
   size: string;
   color: string;
+  width: string;
 }
 
 export interface poundWeight {
@@ -15,41 +16,66 @@ export interface poundWeight {
   tailwindColor: string;
   size: string;
   color: string;
+  width: string;
 }
 
 export const kilogramWeightArray: kilogramWeight[] = [
-  { weight: 25, tailwindColor: 'bg-red-500', size: 'h-32', color: 'red' },
-  { weight: 20, tailwindColor: 'bg-blue-500', size: 'h-28', color: 'blue' },
+  {
+    weight: 25,
+    tailwindColor: 'bg-red-500',
+    size: 'h-32',
+    color: 'red',
+    width: 'w-32',
+  },
+  {
+    weight: 20,
+    tailwindColor: 'bg-blue-500',
+    size: 'h-28',
+    color: 'blue',
+    width: 'w-28',
+  },
   {
     weight: 15,
     tailwindColor: 'bg-yellow-500',
     size: 'h-24',
     color: 'yellow',
+    width: 'w-24',
   },
-  { weight: 10, tailwindColor: 'bg-green-500', size: 'h-20', color: 'green' },
+  {
+    weight: 10,
+    tailwindColor: 'bg-green-500',
+    size: 'h-20',
+    color: 'green',
+    width: 'w-20',
+  },
   {
     weight: 5,
     tailwindColor: 'bg-white border-2 border-black',
     size: 'h-16',
     color: 'white',
+    width: 'w-16',
   },
   {
     weight: 2.5,
     tailwindColor: 'bg-black',
     size: 'h-12',
     color: 'black',
+    width: 'w-12',
+  },
+
+  {
+    weight: 1.25,
+    tailwindColor: 'bg-gray-500',
+    size: 'h-8',
+    color: 'silver',
+    width: 'w-8',
   },
   {
     weight: 2.5,
     tailwindColor: 'bg-gray-300',
     size: 'h-4 w-4',
     color: 'collar',
-  },
-  {
-    weight: 1.25,
-    tailwindColor: 'bg-gray-500',
-    size: 'h-8',
-    color: 'silver',
+    width: 'w-4',
   },
 ];
 
@@ -59,31 +85,42 @@ export const poundWeightArray: poundWeight[] = [
     tailwindColor: 'bg-black',
     size: 'h-32',
     color: 'black',
+    width: 'w-32',
   },
   {
     weight: 35,
     tailwindColor: 'bg-black',
     size: 'h-28',
     color: 'black',
+    width: 'w-28',
   },
   {
     weight: 25,
     tailwindColor: 'bg-black',
     size: 'h-24',
     color: 'black',
+    width: 'w-24',
   },
   {
     weight: 10,
     tailwindColor: 'bg-black',
     size: 'h-20',
     color: 'black',
+    width: 'w-20',
   },
-  { weight: 5, tailwindColor: 'bg-black', size: 'h-16', color: 'black' },
+  {
+    weight: 5,
+    tailwindColor: 'bg-black',
+    size: 'h-16',
+    color: 'black',
+    width: 'w-16',
+  },
   {
     weight: 2.5,
     tailwindColor: 'bg-black',
     size: 'h-12',
     color: 'black',
+    width: 'w-12',
   },
 ];
 
@@ -168,6 +205,7 @@ export class inputComponent implements OnInit {
           tailwindColor: 'bg-gray-300',
           size: 'h-4 w-4',
           color: 'collar',
+          width: 'w-4',
         });
       }
       console.log(result);

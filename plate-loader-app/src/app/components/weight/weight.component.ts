@@ -20,6 +20,7 @@ export class weightComponent implements OnInit {
   weight: kilogramWeight[] | poundWeight[] = [];
   weightSelectionKg: kilogramWeight[] = kilogramWeightArray;
   weightSelectionLb: poundWeight[] = poundWeightArray;
+
   weightType: boolean = true;
 
   constructor(private weightService: WeightService) {}
@@ -32,4 +33,6 @@ export class weightComponent implements OnInit {
       this.weightType = weightType;
     });
   }
+
+  onClick() {}
 }

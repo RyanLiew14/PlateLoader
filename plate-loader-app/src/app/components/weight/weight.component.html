@@ -1,6 +1,21 @@
 
-  <div class = "grid grid-cols-3 gap-1">
-      <div class = "flex text-center justify-center items-center"*ngFor="let weight of weightSelectionKg" > {{weight.color}}</div>
+  <div *ngIf = "weightType" class = "grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 mt-12">
+
+      <div class = "flex flex-col font-semibold font-sans text-lg text-center justify-center items-center "*ngFor="let weight of weightSelectionKg" >
+        <p *ngIf="!(weight.color == 'collar')">{{weight.weight}}</p>
+        <div class = "border-2 border-black flex justify-center rounded-full {{weight.size}} {{weight.width}} {{weight.tailwindColor}} items-center" *ngIf="!(weight.color == 'collar')">
+          <div class = "bg-white rounded-full w-4 h-4 border-2 border-black"></div>
+        </div>
+      </div>
+  </div>
+  <div *ngIf = "!weightType" class = "grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 mt-12">
+
+      <div class = "flex flex-col font-semibold font-sans text-lg text-center justify-center items-center "*ngFor="let weight of weightSelectionLb" >
+        <p>{{weight.weight}}</p>
+        <div class = "border-2 border-black flex justify-center rounded-full {{weight.size}} {{weight.width}} {{weight.tailwindColor}} items-center">
+          <div class = "bg-white rounded-full w-4 h-4 border-2 border-black"></div>
+        </div>
+      </div>
   </div>
 
 

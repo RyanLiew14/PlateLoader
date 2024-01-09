@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { headerComponent } from './components/header/header.component';
 import { inputComponent } from './components/input/input.component';
 import { barbellComponent } from './components/barbell/barbell.component';
+import { weightComponent } from './components/weight/weight.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { barbellComponent } from './components/barbell/barbell.component';
     headerComponent,
     inputComponent,
     barbellComponent,
+    weightComponent,
   ],
 })
 export class AppComponent {
